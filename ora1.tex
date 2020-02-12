@@ -1,0 +1,73 @@
+\documentclass[a4paper, 12pt, fullpage]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[magyar]{babel}
+\usepackage[margin=1.5cm,includefoot,footskip=30pt,]{geometry}
+\usepackage{amsmath}
+
+\author{PJT}
+\title{Mestint 1. óra}
+
+\begin{document}
+    \maketitle
+    \textbf{Követelmények:}
+    \begin{itemize}
+        \item {Alárás: 
+            \begin{itemize}
+                \item Hetente kis dolgozat: 3. héttől, összesen 8, 10p, teszt-jellegű. Sikeres 60\%-tól
+                \item 1 NAGY ZH, félév közepén, előadáson. 1 pótlás utolsó héten, pótpót vizsgaidőszak első v. második hetében. Sikeres: 60\%-tól
+            \end{itemize}
+        }
+        \item {\textbf{Vizsga:}
+            \begin{itemize}
+                \item Szóbeli vizsga
+            \end{itemize}
+        }
+    \end{itemize}
+    \newpage
+    \begin{center}
+        \Large\textbf{Tananyag kezdete}
+    \end{center}
+    \noindent\textbf{Ágens:} Tudja érzékelni a világ információit, illetve változtatni a világot.\\
+    \textbf{Problémamegoldás:} ebben a tárgyban állapotátmenetek sorozataként értelmezzük.\\
+    \textbf{Állapottér:} Ágens pillanatfelvételt készit a viláról, tervet készit a világ megváltoztatásra a megfelelő helyzethez, majd végrehajtja azokat.\\
+    $<A, $\textit{kezdő}$, C, O>$ négyessel reprezentáljuk\\
+    $A$: állapottér, $A \neq \emptyset, A \subseteq H_1 \times H_2 \times \cdots \times H_n$, $H_i$: a probléma $i$ jellemzőjének értéke, $H_i \neq \emptyset$, $A = \{(a_1, a_2, \cdots, a_n) \in H_1 \times H_2 \times \cdots \times H_n$, $H_i | $\textit{kényszerfeltétel}$(a_1, a_2, \cdots, a_n)\}$\\
+    \textit{kezdő} $\in A$.\\
+    $C$: célállapotok, $C \subseteq A$, $C = \{(a_1, a_2, \cdots, a_n) \in A | $\textit{célfeltétel}$(a_1, a_2, \cdots, a_n)\}$.\\
+    $O = \{o_1, o_2, \cdots\}$ függvényhalmaz. $o_i \in O, o: A \rightarrow A$\\
+    $dom(o) = \{(a_1, a_2, \cdots, a_n) \in A | $\textit{operátoralkalmazési-előfeltétel}$(a_1, a_2, \cdots, a_n)\}$\\
+    $(a_1, a_2, \cdots, a_n) \in dom(o)$\\
+    $o(a_1, a_2, \cdots, a_n) = (b_1, b_2, \cdots, b_n), (b_1, b_2, \cdots, b_n) \in A$\\ \\
+    \large\textbf{Példa} 8 kockás játék (3x3-as, tologatós)\\
+    \begin{tabular}{|c|c|c|}
+        \hline
+        1 & 2 & \\
+        \hline
+        4 & 6 & 3 \\
+        \hline
+        7 & 5 & 8\\
+        \hline
+    \end{tabular}
+    $\longrightarrow$
+    \begin{tabular}{|c|c|c|}
+        \hline
+        1 & 2 & 3\\
+        \hline
+        4 & 5 &6 \\
+        \hline
+        7 & 8 & \\
+        \hline
+    \end{tabular}\\
+    Reprezentálható egy $3 \times 3$-as mátrixszal:\\
+    $\begin{bmatrix}
+        1 & 2 & 0\\
+        4 & 6 & 3 \\
+        7 & 5 & 8\\
+    \end{bmatrix}$
+    
+        $C = \begin{bmatrix}
+            1 & 2 & 3\\
+            4 & 5 & 6\\
+            7 & 8 & 0\\
+        \end{bmatrix}$
+\end{document}
