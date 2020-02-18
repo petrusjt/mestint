@@ -1,0 +1,55 @@
+\documentclass[a4paper, 12pt, fullpage]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[magyar]{babel}
+\usepackage[margin=1.5cm,includefoot,footskip=30pt,]{geometry}
+\usepackage{amsmath}
+
+\author{PJT}
+\title{Mestint 2. előadás}
+
+\begin{document}
+    \maketitle
+    %\newpage
+    \textbf{Példán keresztüli magyarázat:}\\
+    $A = \{\begin{bmatrix}
+        A_{11} & & \\
+        & & \\
+        & & A_{33}\\
+    \end{bmatrix} \subseteq VALAMI\}$\\
+    $C \subseteq A$\\
+    $\sigma = \{f: fel, l: le, b: balra, j: jobbra\}$\\
+    $le: dom(le) \rightarrow A$\\
+    $dom(le) = (\begin{bmatrix}
+        A_{11} & &\\
+        &&\\
+        &&A_{33}\\
+    \end{bmatrix} \subseteq A | A_{31}, A_{32}, A_{33} \neq 0\rbrace$\\
+    $le(\begin{bmatrix}
+        A_{11}&&\\
+        &&\\
+        &&A_{33}\\
+    \end{bmatrix}) = \begin{bmatrix}
+        A_{11}&&\\
+        &&\\
+        &&A_{33}\\
+    \end{bmatrix}$\\
+    \textbf{Fogalmak:}\\
+    \begin{itemize}
+        \item \textbf{Közvetlen elérhetőség:} Legyen $a \in A, b \in A$. Az $a$ állapotból a $b$ állapot közvetlenül elérhető, ha van olyan operátort tudunk alkalmazni az $a$ állapotra és célállapota a $b$ állapot.\\Jelölés: $a \Rightarrow b$
+        \item \textbf{Elérhetőség:} Legyen $a,b \in A$. Az $a$ állapotból $b$ állapot elérhető, ha ezek\begin{itemize}
+            \item $a = b$
+            \item Van olyan $o_1, o_2, ..., o_k$ operátorsorozat, $o_n \in o, i=1,2,...,k, i > 1$, amelyre $a_i \Rightarrow a_{i+1} \Rightarrow ... \Rightarrow b$\\Jelölés: $a \Rightarrow^* b$
+        \end{itemize}
+    \end{itemize}
+    $<A, kezdo, C, o>$ megoldható, ha a kezdőállapotból elérhető valamely célállapot.\\
+    $C \neq \emptyset$\\
+    \begin{center}
+        \textbf{Ágensszemlélet}
+    \end{center}
+    \textbf{Ágens:} Bármi lehet, aminek van \begin{itemize}
+        \item Érzékelője/Szenzora: információt nyerhetnek a környezetről
+        \item Beavatkozója/Aktuátor: valamilyen módosítást hajtanak végre a környezeten
+    \end{itemize}
+    Érzékelés $\longrightarrow$ cselekvés?\\
+    Ágensffüggvény érzékeléssorozathoz 1 darab cselekvést rendel.
+\end{document}
