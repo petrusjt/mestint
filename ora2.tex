@@ -9,7 +9,7 @@
 
 \begin{document}
     \maketitle
-    %\newpage
+    \newpage
     \textbf{Példán keresztüli magyarázat:}\\
     $A = \{\begin{bmatrix}
         A_{11} & & \\
@@ -44,12 +44,27 @@
     $<A, kezdo, C, o>$ megoldható, ha a kezdőállapotból elérhető valamely célállapot.\\
     $C \neq \emptyset$\\
     \begin{center}
-        \textbf{Ágensszemlélet}
+        \Large{\textbf{Ágensszemlélet}}
     \end{center}
     \textbf{Ágens:} Bármi lehet, aminek van \begin{itemize}
         \item Érzékelője/Szenzora: információt nyerhetnek a környezetről
         \item Beavatkozója/Aktuátor: valamilyen módosítást hajtanak végre a környezeten
     \end{itemize}
     Érzékelés $\longrightarrow$ cselekvés?\\
-    Ágensffüggvény érzékeléssorozathoz 1 darab cselekvést rendel.
+    Ágensffüggvény érzékeléssorozathoz 1 darab cselekvést rendel.\\
+    \textbf{Determinisztikus regresszió:} Determinisztikus környezetben a környezet állapota meghatározható a környezet előzetes állapotából és az ágens által végrehajtott cselekvésből.\\
+    \textbf{epizodikus(sorozatszerű) környezetek:} Egy adott cselekvéssorozat a következő cselekvéssorozatra nincs hatással.
+    \textbf{Diszkrét/folytonos környezetek:}
+    \begin{itemize}
+        \item Diszkrét: Véges kiértékelés, véges cselekvés
+        \item Folytonos: Robot taxi példa
+    \end{itemize}
+    \textbf{Egy-, vagy többágenses környezet:}
+    \begin{itemize}
+        \item Egyágenses környezet: pl. kirakó kirakása
+        \item Többágenses: pl. robotporszívó\begin{itemize}
+            \item Kooperatív környezet: pl. automata járművek
+            \item Kompetetív környezet: pl. parkolási "harc"
+        \end{itemize}
+    \end{itemize}
 \end{document}
